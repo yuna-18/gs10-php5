@@ -1,0 +1,67 @@
+// *トップ画面
+@media screen {
+  #top {
+    .top__wrapper {
+      .subscribe-banner__container {
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        bottom: 0;
+        width: calc(240 / 750 * 100vw);
+        height: calc(240 / 750 * 100vw);
+        background-color: lightyellow;
+        border-radius: 50%;
+
+        .subscribe-banner__content {
+          width: 100%;
+          height: 100%;
+          font-size: calc(32 / 750 * 100vw);
+          display: flex;
+          /* １．aタグをflex要素にする */
+          justify-content: center;
+          /* ２．左右中央 */
+          align-items: center;
+
+          a {
+            color: #000;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .mypage {
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        bottom: 0;
+        font-size: calc(32 / 750 * 100vw);
+        color: #000;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// *PC
+@media screen and (min-width: 960px) {
+  #top {
+    .top__wrapper {
+      // width: 960px;
+      margin: 0 auto;
+      position: relative;
+
+      .subscribe-banner__container {
+        width: 150px;
+        height: 150px;
+
+        .subscribe-banner__content {
+          font-size: 20px;
+        }
+      }
+
+      .mypage {
+        font-size: 20px;
+      }
+    }
+  }
+}

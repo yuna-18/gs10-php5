@@ -1,0 +1,232 @@
+// *共通
+@media screen {
+  * {
+    font-size: calc(28 / 750 * 100vw);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: calc(36 / 750 * 100vw);
+    font-weight: bold;
+  }
+
+  .form__wrapper {
+
+    .form__container {
+      margin: calc(60 / 750 * 100vw) auto 0;
+      width: 90%;
+
+      .form__content {
+        border: 1px solid #000;
+        padding: calc(30 / 750 * 100vw) 0;
+
+        .form__outer {
+          padding: 0 calc(15 / 750 * 100vw);
+
+          + .form__outer {
+            margin-top: calc(40 / 750 * 100vw);
+          }
+
+          .register__content {
+            margin-top: calc(15 / 750 * 100vw);
+
+            &--list {
+              margin-top: calc(30 / 750 * 100vw);
+            }
+          }
+        }
+
+        .notation {
+          margin-bottom: calc(60 / 750 * 100vw);
+          text-align: center;
+
+          p {
+            font-weight: bold;
+          }
+        }
+      }
+
+    }
+  }
+
+  .btn__container {
+    display: flex;
+    justify-content: center;
+    column-gap: calc(60 / 750 * 100vw);
+    margin-top: calc(40 / 750 * 100vw);
+  }
+
+}
+
+// *PC
+@media screen and (min-width: 960px) {
+  * {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .form__wrapper {
+
+    .form__container {
+      .form__content {
+        padding: 15px 0;
+
+        .form__outer {
+          padding: 0 15px;
+
+          + .form__outer {
+            margin-top: 20px;
+          }
+
+          .register__content {
+            margin-top: 10px;
+
+            &--list {
+              margin-top: 15px;
+            }
+          }
+        }
+
+        .notation {
+          margin-bottom: 40px;
+
+          p {
+            font-weight: bold;
+          }
+        }
+      }
+
+    }
+  }
+
+  .btn__container {
+    column-gap: 45px;
+    margin: 30px auto 0;
+  }
+}
+
+
+// *入力画面
+@media screen {
+  #form {
+
+    input[type="text"] {
+      display: block;
+      width: 80%;
+      margin-top: calc(15 / 750 * 100vw);
+    }
+
+    input[type="checkbox"] {
+      display: inline-block;
+    }
+
+    .form__wrapper {
+
+      .form__container {
+
+        .form__content {
+
+          .form__outer {
+            .input-check__list {
+              display: block;
+            }
+
+            .input-check__item {
+              margin-top: calc(15 / 750 * 100vw);
+
+              label {
+                display: block;
+                position: relative;
+                padding-left: 2em;
+                line-height: 2em;
+
+                input {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  margin: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// *PC
+@media screen and (min-width: 960px) {
+  #form {
+
+    input[type="text"] {
+      display: block;
+      width: 80%;
+      margin-top: 15px;
+    }
+
+    .form__wrapper {
+      h1 {
+        font-size: 36px;
+      }
+
+      .form__container {
+        width: 90%;
+        margin: 40px auto 0;
+
+        .form__content {
+
+          .form__outer {
+
+            .input-check__item {
+              margin-top: 5px;
+
+              label {
+                padding-left: 1.5em;
+                line-height: 1.5em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// *送信完了画面
+@media screen {
+  #complete {
+
+    .form__wrapper {
+
+      .form__container {
+        padding: calc(60 / 750 * 100vw) calc(30 / 750 * 100vw);
+
+        .form__content {
+          padding: calc(30 / 750 * 100vw) 0;
+        }
+      }
+    }
+  }
+}
+
+// *PC
+@media screen {
+  #complete {
+
+    .form__wrapper {
+
+      .form__container {
+        padding: 60px 30px;
+
+        .form__content {
+          padding: 30px 0;
+        }
+      }
+    }
+  }
+}

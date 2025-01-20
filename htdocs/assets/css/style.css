@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@media screen {
+  #top .top__wrapper .subscribe-banner__container {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    width: 32vw;
+    height: 32vw;
+    background-color: lightyellow;
+    border-radius: 50%;
+  }
+  #top .top__wrapper .subscribe-banner__container .subscribe-banner__content {
+    width: 100%;
+    height: 100%;
+    font-size: 4.2666666667vw;
+    display: flex;
+    /* １．aタグをflex要素にする */
+    justify-content: center;
+    /* ２．左右中央 */
+    align-items: center;
+  }
+  #top .top__wrapper .subscribe-banner__container .subscribe-banner__content a {
+    color: #000;
+    font-weight: bold;
+  }
+  #top .top__wrapper .mypage {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    font-size: 4.2666666667vw;
+    color: #000;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 960px) {
+  #top .top__wrapper {
+    margin: 0 auto;
+    position: relative;
+  }
+  #top .top__wrapper .subscribe-banner__container {
+    width: 150px;
+    height: 150px;
+  }
+  #top .top__wrapper .subscribe-banner__container .subscribe-banner__content {
+    font-size: 20px;
+  }
+  #top .top__wrapper .mypage {
+    font-size: 20px;
+  }
+}
+@media screen {
+  * {
+    font-size: 3.7333333333vw;
+  }
+  h1 {
+    text-align: center;
+    font-size: 4.8vw;
+    font-weight: bold;
+  }
+  .form__wrapper .form__container {
+    margin: 8vw auto 0;
+    width: 90%;
+  }
+  .form__wrapper .form__container .form__content {
+    border: 1px solid #000;
+    padding: 4vw 0;
+  }
+  .form__wrapper .form__container .form__content .form__outer {
+    padding: 0 2vw;
+  }
+  .form__wrapper .form__container .form__content .form__outer + .form__outer {
+    margin-top: 5.3333333333vw;
+  }
+  .form__wrapper .form__container .form__content .form__outer .register__content {
+    margin-top: 2vw;
+  }
+  .form__wrapper .form__container .form__content .form__outer .register__content--list {
+    margin-top: 4vw;
+  }
+  .form__wrapper .form__container .form__content .notation {
+    margin-bottom: 8vw;
+    text-align: center;
+  }
+  .form__wrapper .form__container .form__content .notation p {
+    font-weight: bold;
+  }
+  .btn__container {
+    display: flex;
+    justify-content: center;
+    -moz-column-gap: 8vw;
+         column-gap: 8vw;
+    margin-top: 5.3333333333vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  * {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  .form__wrapper .form__container .form__content {
+    padding: 15px 0;
+  }
+  .form__wrapper .form__container .form__content .form__outer {
+    padding: 0 15px;
+  }
+  .form__wrapper .form__container .form__content .form__outer + .form__outer {
+    margin-top: 20px;
+  }
+  .form__wrapper .form__container .form__content .form__outer .register__content {
+    margin-top: 10px;
+  }
+  .form__wrapper .form__container .form__content .form__outer .register__content--list {
+    margin-top: 15px;
+  }
+  .form__wrapper .form__container .form__content .notation {
+    margin-bottom: 40px;
+  }
+  .form__wrapper .form__container .form__content .notation p {
+    font-weight: bold;
+  }
+  .btn__container {
+    -moz-column-gap: 45px;
+         column-gap: 45px;
+    margin: 30px auto 0;
+  }
+}
+@media screen {
+  #form input[type=text] {
+    display: block;
+    width: 80%;
+    margin-top: 2vw;
+  }
+  #form input[type=checkbox] {
+    display: inline-block;
+  }
+  #form .form__wrapper .form__container .form__content .form__outer .input-check__list {
+    display: block;
+  }
+  #form .form__wrapper .form__container .form__content .form__outer .input-check__item {
+    margin-top: 2vw;
+  }
+  #form .form__wrapper .form__container .form__content .form__outer .input-check__item label {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    line-height: 2em;
+  }
+  #form .form__wrapper .form__container .form__content .form__outer .input-check__item label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 960px) {
+  #form input[type=text] {
+    display: block;
+    width: 80%;
+    margin-top: 15px;
+  }
+  #form .form__wrapper h1 {
+    font-size: 36px;
+  }
+  #form .form__wrapper .form__container {
+    width: 90%;
+    margin: 40px auto 0;
+  }
+  #form .form__wrapper .form__container .form__content .form__outer .input-check__item {
+    margin-top: 5px;
+  }
+  #form .form__wrapper .form__container .form__content .form__outer .input-check__item label {
+    padding-left: 1.5em;
+    line-height: 1.5em;
+  }
+}
+@media screen {
+  #complete .form__wrapper .form__container {
+    padding: 8vw 4vw;
+  }
+  #complete .form__wrapper .form__container .form__content {
+    padding: 4vw 0;
+  }
+}
+@media screen {
+  #complete .form__wrapper .form__container {
+    padding: 60px 30px;
+  }
+  #complete .form__wrapper .form__container .form__content {
+    padding: 30px 0;
+  }
+}
+@media screen {
+  .mypage__outer {
+    display: flex;
+    -moz-column-gap: 1.3333333333vw;
+         column-gap: 1.3333333333vw;
+  }
+  .btn {
+    margin: 5.3333333333vw auto 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .mypage__outer {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .btn {
+    margin: 20px auto 0;
+  }
+}
+@media screen {
+  * {
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    color: #000;
+    background-color: lightgrey;
+    display: block;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: 4.2666666667vw;
+    font-family: Arial;
+    font-weight: bold;
+    width: 32vw;
+    height: 8vw;
+    line-height: 8vw;
+  }
+  .menu__content {
+    position: fixed;
+    top: 0;
+    padding: 15px 0;
+  }
+  .menu__content .menu__list {
+    display: flex;
+    gap: 30px;
+  }
+  .menu__content .menu__list .menu__item {
+    margin-top: 2vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  body {
+    background-color: lightblue;
+  }
+  main {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 960px;
+    height: 100vh;
+  }
+  .btn {
+    font-size: 18px;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,68 @@
+@import './home';
+@import './form';
+@import './mypage';
+
+@media screen {
+  * {
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    color: #000;
+    background-color: lightgrey;
+    display: block;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: calc(32 / 750 * 100vw);
+    font-family: Arial;
+    font-weight: bold;
+    width: calc(240 / 750 * 100vw);
+    height: calc(60 / 750 * 100vw);
+    line-height: calc(60 / 750 * 100vw);
+  }
+  
+  .menu__content {
+    position: fixed;
+    top: 0;
+    padding: 15px 0;
+    .menu__list {
+      display: flex;
+      gap: 30px;
+      .menu__item {
+        margin-top: calc(15 / 750 * 100vw);
+      }
+    }
+  }
+}
+
+
+// *PC
+@media screen and (min-width: 960px) {
+  body {
+    background-color: lightblue;
+  }
+  
+  main {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 960px;
+    height: 100vh;
+  }
+  
+  .btn {
+    font-size: 18px;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+  }
+}

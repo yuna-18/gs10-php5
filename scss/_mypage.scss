@@ -1,0 +1,28 @@
+@media screen {
+  .mypage__wrapper {
+    .mypage__container {
+      .mypage__content {
+        .mypage__content {}
+      }
+    }
+  }
+
+  .mypage__outer {
+    display: flex;
+    column-gap: calc(10 / 750 * 100vw);
+  }
+
+  .btn {
+    margin: calc(40 / 750 * 100vw) auto 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .mypage__outer {
+    column-gap: 30px;
+  }
+
+  .btn {
+    margin: 20px auto 0;
+  }
+}
