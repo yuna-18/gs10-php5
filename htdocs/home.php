@@ -53,10 +53,10 @@ if (isset($_GET['token'])) {
         <?= "ようこそ " . $userData['name'] . " さん" ;?>
       </li>
       <li class="menu__item">
-        <?= '<a href="./mypage/index.php' . $token . '" class="mypage">マイページ</a>' ?>
+        <a href="./auth/logout.php">ログアウト</a>
       </li>
       <li class="menu__item">
-        <a href="./auth/logout.php">ログアウト</a>
+        <?= '<a href="./mypage/index.php' . $token . '" class="mypage">マイページ</a>' ?>
       </li>
     </ul>
   </header>

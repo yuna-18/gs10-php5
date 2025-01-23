@@ -53,9 +53,6 @@
     align-items: center;
     gap: 2vw;
   }
-  .main__content {
-    width: 95%;
-  }
 }
 @media screen and (min-width: 960px) {
   body {
@@ -92,30 +89,29 @@
   .menu__content .menu__list {
     gap: 15px;
   }
-  .main__content {
-    width: 800px;
-  }
 }
 @media screen {
-  #top .top__wrapper {
-    display: block;
-  }
-  #top .top__wrapper .main__content {
-    margin: 26.6666666667vw auto 0;
-  }
-  #top .top__wrapper .main__content .text__outer {
-    width: 66.6666666667vw;
+  .main__content {
+    width: 95%;
     margin: 0 auto;
   }
-  #top .top__wrapper .main__content .text__outer .large {
+  .main__content .text__outer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 13px;
+  }
+  .main__content .text__outer .large {
     font-size: 4.8vw;
   }
-  #top .top__wrapper .main__content .text__outer p {
+  .main__content .text__outer p {
     margin-top: 2vw;
     font-size: 3.2vw;
   }
-  #top .top__wrapper .main__content .search-window {
+  .main__content .search-window {
     width: 100%;
+  }
+  #top .top__wrapper {
+    display: block;
   }
   #top .top__wrapper .mypage {
     position: fixed;
@@ -128,27 +124,28 @@
   }
 }
 @media screen and (min-width: 960px) {
-  #top .top__wrapper {
+  .main__content {
     margin: 0 auto;
-    position: relative;
+    width: 800px;
   }
-  #top .top__wrapper .main__content {
-    margin: 0 auto;
+  .main__content .text__outer {
+    width: 100%;
+    padding: 13px;
   }
-  #top .top__wrapper .main__content .text__outer {
-    width: 772px;
-    margin: 0 auto;
-  }
-  #top .top__wrapper .main__content .text__outer .large {
+  .main__content .text__outer .large {
     font-size: 24px;
   }
-  #top .top__wrapper .main__content .text__outer p {
+  .main__content .text__outer p {
     margin-top: 15px;
     font-size: 18px;
   }
-  #top .top__wrapper .main__content .search-window {
+  .main__content .search-window {
     width: 100%;
     padding-bottom: 20px;
+  }
+  #top .top__wrapper {
+    margin: 0 auto;
+    position: relative;
   }
   #top .top__wrapper .mypage {
     font-size: 20px;
