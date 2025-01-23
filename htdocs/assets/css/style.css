@@ -1,5 +1,104 @@
 @charset "UTF-8";
 @media screen {
+  * {
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    color: #000;
+    background-color: lightgrey;
+    display: block;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: 4.2666666667vw;
+    font-family: Arial;
+    font-weight: bold;
+    width: 32vw;
+    height: 8vw;
+    line-height: 8vw;
+  }
+  .btn__container .btn {
+    margin: 0;
+  }
+  .menu__content {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    justify-content: space-between;
+    top: 0;
+    padding: 2.6666666667vw;
+    width: 100%;
+    height: 21.3333333333vw;
+    background-color: lightblue;
+    font-size: 3.7333333333vw;
+  }
+  .menu__content .menu__list {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    gap: 2vw;
+  }
+  .main__content {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 960px) {
+  body {
+    background-color: lightblue;
+  }
+  .sp {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
+  main {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 960px;
+  }
+  .btn {
+    font-size: 18px;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+  }
+  .menu__content {
+    padding: 20px;
+    margin: 0 auto;
+    width: 960px;
+    height: 160px;
+    font-size: 24px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .menu__content .menu__list {
+    gap: 15px;
+  }
+  .main__content {
+    width: 800px;
+  }
+}
+@media screen {
+  #top .top__wrapper {
+    display: block;
+  }
   #top .top__wrapper .subscribe-banner__container {
     position: fixed;
     z-index: 10;
@@ -24,6 +123,23 @@
     color: #000;
     font-weight: bold;
   }
+  #top .top__wrapper .main__content {
+    margin: 26.6666666667vw auto 0;
+  }
+  #top .top__wrapper .main__content .text__outer {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  #top .top__wrapper .main__content .text__outer .large {
+    font-size: 4.8vw;
+  }
+  #top .top__wrapper .main__content .text__outer p {
+    margin-top: 2vw;
+    font-size: 3.2vw;
+  }
+  #top .top__wrapper .main__content .search-window {
+    width: 100%;
+  }
   #top .top__wrapper .mypage {
     position: fixed;
     z-index: 10;
@@ -46,6 +162,25 @@
   #top .top__wrapper .subscribe-banner__container .subscribe-banner__content {
     font-size: 20px;
   }
+  #top .top__wrapper .main__content {
+    margin: 0 auto;
+    padding: 180px 0 0;
+  }
+  #top .top__wrapper .main__content .text__outer {
+    width: 772px;
+    margin: 0 auto;
+  }
+  #top .top__wrapper .main__content .text__outer .large {
+    font-size: 24px;
+  }
+  #top .top__wrapper .main__content .text__outer p {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  #top .top__wrapper .main__content .search-window {
+    width: 100%;
+    padding-bottom: 20px;
+  }
   #top .top__wrapper .mypage {
     font-size: 20px;
   }
@@ -59,9 +194,12 @@
     font-size: 4.8vw;
     font-weight: bold;
   }
+  .form__wrapper {
+    margin: 4vw auto;
+  }
   .form__wrapper .form__container {
-    margin: 8vw auto 0;
-    width: 90%;
+    margin: 4vw auto 0;
+    width: 95%;
   }
   .form__wrapper .form__container .form__content {
     border: 1px solid #000;
@@ -211,61 +349,5 @@
   }
   .btn {
     margin: 20px auto 0;
-  }
-}
-@media screen {
-  * {
-    text-decoration: none;
-    box-sizing: border-box;
-  }
-  main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .btn {
-    color: #000;
-    background-color: lightgrey;
-    display: block;
-    text-align: center;
-    border: 1px solid #000;
-    font-size: 4.2666666667vw;
-    font-family: Arial;
-    font-weight: bold;
-    width: 32vw;
-    height: 8vw;
-    line-height: 8vw;
-  }
-  .menu__content {
-    position: fixed;
-    top: 0;
-    padding: 15px 0;
-  }
-  .menu__content .menu__list {
-    display: flex;
-    gap: 30px;
-  }
-  .menu__content .menu__list .menu__item {
-    margin-top: 2vw;
-  }
-}
-@media screen and (min-width: 960px) {
-  body {
-    background-color: lightblue;
-  }
-  main {
-    background-color: #fff;
-    margin: 0 auto;
-    width: 960px;
-    height: 100vh;
-  }
-  .btn {
-    font-size: 18px;
-    width: 240px;
-    height: 60px;
-    line-height: 60px;
-    cursor: pointer;
   }
 }

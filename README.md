@@ -8,7 +8,7 @@
 
 
 ## ③DEMO
-https://snowtapir22.sakura.ne.jp/gs09-php4/index.php
+https://snowtapir22.sakura.ne.jp/gs10-php5/index.php
 
 ログイン<br>
 上記のリンクから<br>

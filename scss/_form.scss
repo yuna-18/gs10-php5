@@ -11,10 +11,11 @@
   }
 
   .form__wrapper {
+    margin: calc(30 / 750 * 100vw) auto;
 
     .form__container {
-      margin: calc(60 / 750 * 100vw) auto 0;
-      width: 90%;
+      margin: calc(30 / 750 * 100vw) auto 0;
+      width: 95%;
 
       .form__content {
         border: 1px solid #000;

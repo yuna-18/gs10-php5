@@ -60,6 +60,7 @@ if (isset($_GET['token'])) {
         </li>
       </ul>
     </nav>
+    <script async src="https://cse.google.com/cse.js?cx=349714df9516f4648"></script>
   </main>
 </body>
 

@@ -2,6 +2,8 @@
 @media screen {
   #top {
     .top__wrapper {
+      display: block;
+      
       .subscribe-banner__container {
         position: fixed;
         z-index: 10;
@@ -28,7 +30,27 @@
           }
         }
       }
-
+      .main__content {
+        margin: calc(200 / 750 * 100vw) auto 0;
+        
+        .text__outer {
+          width: calc(600 / 750 * 100vw);
+          margin: 0 auto;
+          .large {
+            font-size: calc(36 / 750 * 100vw);
+          }
+          
+          p {
+            margin-top: calc(15 / 750 * 100vw);
+            font-size: calc(24 / 750 * 100vw);
+          }
+        }
+        
+        .search-window {
+          // margin-top: calc(160 / 750 * 100vw);
+          width: 100%;
+        }
+      }
       .mypage {
         position: fixed;
         z-index: 10;
@@ -59,6 +81,29 @@
         }
       }
 
+      .main__content {
+        margin: 0 auto;
+        padding: 180px 0 0;
+        
+        .text__outer {
+          width: 772px;
+          margin: 0 auto;
+          .large {
+            font-size: 24px;
+          }
+          
+          p {
+            margin-top: 15px;
+            font-size: 18px;
+          }
+        }
+        
+        .search-window {
+          // margin-top: calc(160 / 750 * 100vw);
+          width: 100%;
+          padding-bottom: 20px;
+        }
+      }
       .mypage {
         font-size: 20px;
       }

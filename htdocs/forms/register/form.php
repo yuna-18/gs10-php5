@@ -16,7 +16,7 @@
       <div class="form__content">
         <div class="form__outer">
           <label for="name">氏名</label>
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" autofocus>
         </div>
         <div class="form__outer">
           <label for="furigana">フリガナ</label>
