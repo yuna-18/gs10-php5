@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: calc(200 / 750 * 100vw) 0 0;
   }
 
   .btn {
@@ -81,6 +82,7 @@
     background-color: #fff;
     margin: 0 auto;
     width: 960px;
+    padding: 180px 0 0;
     // height: 100vh;
   }
   

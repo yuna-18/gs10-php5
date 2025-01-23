@@ -4,37 +4,37 @@
     .top__wrapper {
       display: block;
       
-      .subscribe-banner__container {
-        position: fixed;
-        z-index: 10;
-        right: 0;
-        bottom: 0;
-        width: calc(240 / 750 * 100vw);
-        height: calc(240 / 750 * 100vw);
-        background-color: lightyellow;
-        border-radius: 50%;
+      // .subscribe-banner__container {
+      //   position: fixed;
+      //   z-index: 10;
+      //   right: 0;
+      //   bottom: 0;
+      //   width: calc(240 / 750 * 100vw);
+      //   height: calc(240 / 750 * 100vw);
+      //   background-color: lightyellow;
+      //   border-radius: 50%;
 
-        .subscribe-banner__content {
-          width: 100%;
-          height: 100%;
-          font-size: calc(32 / 750 * 100vw);
-          display: flex;
-          /* １．aタグをflex要素にする */
-          justify-content: center;
-          /* ２．左右中央 */
-          align-items: center;
+      //   .subscribe-banner__content {
+      //     width: 100%;
+      //     height: 100%;
+      //     font-size: calc(32 / 750 * 100vw);
+      //     display: flex;
+      //     /* １．aタグをflex要素にする */
+      //     justify-content: center;
+      //     /* ２．左右中央 */
+      //     align-items: center;
 
-          a {
-            color: #000;
-            font-weight: bold;
-          }
-        }
-      }
+      //     a {
+      //       color: #000;
+      //       font-weight: bold;
+      //     }
+      //   }
+      // }
       .main__content {
         margin: calc(200 / 750 * 100vw) auto 0;
         
         .text__outer {
-          width: calc(600 / 750 * 100vw);
+          width: calc(500 / 750 * 100vw);
           margin: 0 auto;
           .large {
             font-size: calc(36 / 750 * 100vw);
@@ -72,18 +72,17 @@
       margin: 0 auto;
       position: relative;
 
-      .subscribe-banner__container {
-        width: 150px;
-        height: 150px;
+      // .subscribe-banner__container {
+      //   width: 150px;
+      //   height: 150px;
 
-        .subscribe-banner__content {
-          font-size: 20px;
-        }
-      }
+      //   .subscribe-banner__content {
+      //     font-size: 20px;
+      //   }
+      // }
 
       .main__content {
         margin: 0 auto;
-        padding: 180px 0 0;
         
         .text__outer {
           width: 772px;

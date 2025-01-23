@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media screen {
   * {
     text-decoration: none;
@@ -16,6 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 26.6666666667vw 0 0;
   }
   .btn {
     color: #000;
@@ -71,6 +71,7 @@
     background-color: #fff;
     margin: 0 auto;
     width: 960px;
+    padding: 180px 0 0;
   }
   .btn {
     font-size: 18px;
@@ -99,35 +100,11 @@
   #top .top__wrapper {
     display: block;
   }
-  #top .top__wrapper .subscribe-banner__container {
-    position: fixed;
-    z-index: 10;
-    right: 0;
-    bottom: 0;
-    width: 32vw;
-    height: 32vw;
-    background-color: lightyellow;
-    border-radius: 50%;
-  }
-  #top .top__wrapper .subscribe-banner__container .subscribe-banner__content {
-    width: 100%;
-    height: 100%;
-    font-size: 4.2666666667vw;
-    display: flex;
-    /* １．aタグをflex要素にする */
-    justify-content: center;
-    /* ２．左右中央 */
-    align-items: center;
-  }
-  #top .top__wrapper .subscribe-banner__container .subscribe-banner__content a {
-    color: #000;
-    font-weight: bold;
-  }
   #top .top__wrapper .main__content {
     margin: 26.6666666667vw auto 0;
   }
   #top .top__wrapper .main__content .text__outer {
-    width: 80vw;
+    width: 66.6666666667vw;
     margin: 0 auto;
   }
   #top .top__wrapper .main__content .text__outer .large {
@@ -155,16 +132,8 @@
     margin: 0 auto;
     position: relative;
   }
-  #top .top__wrapper .subscribe-banner__container {
-    width: 150px;
-    height: 150px;
-  }
-  #top .top__wrapper .subscribe-banner__container .subscribe-banner__content {
-    font-size: 20px;
-  }
   #top .top__wrapper .main__content {
     margin: 0 auto;
-    padding: 180px 0 0;
   }
   #top .top__wrapper .main__content .text__outer {
     width: 772px;
@@ -263,7 +232,7 @@
   .btn__container {
     -moz-column-gap: 45px;
          column-gap: 45px;
-    margin: 30px auto 0;
+    margin: 30px auto;
   }
 }
 @media screen {
@@ -333,21 +302,24 @@
   }
 }
 @media screen {
-  .mypage__outer {
+  .mypage__wrapper .mypage__container.form__container {
+    margin-top: 0;
+  }
+  .mypage__wrapper .mypage__container .mypage__content .menu__list {
     display: flex;
-    -moz-column-gap: 1.3333333333vw;
-         column-gap: 1.3333333333vw;
+    gap: 2.6666666667vw;
+    padding-bottom: 5.3333333333vw;
   }
   .btn {
-    margin: 5.3333333333vw auto 0;
+    margin: 5.3333333333vw auto;
   }
 }
 @media screen and (max-width: 960px) {
-  .mypage__outer {
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+  .mypage__wrapper .mypage__container .mypage__content .menu__list {
+    gap: 20px;
+    padding-bottom: 20px;
   }
   .btn {
-    margin: 20px auto 0;
+    margin: 20px auto;
   }
 }

@@ -1,35 +1,34 @@
 <?php
-require_once __DIR__ . '/../includes/_funcs.php';
-session_start();
-$id = $_SESSION['id'];
-$tk_flg = ck_token($id);
-if ($tk_flg) {
-  $token = "?token=" . $_GET['token'];
-} else {
-  // 有効期限切れならログアウト
-  redirect('../auth/logout.php');
-}
-if (isset($_GET['token'])) {
+  require_once __DIR__ . '/../includes/_funcs.php';
+  session_start();
+  $id = $_SESSION['id'];
+  $tk_flg = ck_token($id);
   if ($tk_flg) {
-    $pdo = connectDb();
-    $stmt = $pdo->prepare("SELECT * FROM userdata_table WHERE id = :id");
-    $stmt->bindValue(':id', $id, PDO::PARAM_INT);
-    $status = $stmt->execute();
-    if ($status === false) {
-      $error = $stmt->errorInfo();
-      exit('SQLError:' . print_r($error, true));
+    $token = "?token=" . $_GET['token'];
+  } else {
+    // 有効期限切れならログアウト
+    redirect('../auth/logout.php');
+  }
+  if (isset($_GET['token'])) {
+    if ($tk_flg) {
+      $pdo = connectDb();
+      $stmt = $pdo->prepare("SELECT * FROM userdata_table WHERE id = :id");
+      $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+      $status = $stmt->execute();
+      if ($status === false) {
+        $error = $stmt->errorInfo();
+        exit('SQLError:' . print_r($error, true));
+      } else {
+        $userData = $stmt->fetch(PDO::FETCH_ASSOC);
+      }
     } else {
-      $userData = $stmt->fetch(PDO::FETCH_ASSOC);
+      // 有効期限切れならログアウト
+      redirect('../auth/logout.php');
     }
   } else {
     // 有効期限切れならログアウト
     redirect('../auth/logout.php');
   }
-} else {
-  // 有効期限切れならログアウト
-  redirect('../auth/logout.php');
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -43,18 +42,19 @@ if (isset($_GET['token'])) {
 </head>
 
 <body id="userdata">
+  <header class="menu__content">
+    <h1>音報</h1>
+    <ul class="menu__list">
+      <li class="menu__item">
+        <?= '<a href="./index.php' . $token . '" class="">マイページ</a>' ?>
+      </li>
+      <li class="menu__item">
+        <?= '<a href="../home.php' . $token . '" class="">ホーム</a>' ?>
+      </li>
+    </ul>
+  </header>
   <main class="mypage__wrapper form__wrapper">
     <div class="mypage__container form__container">
-      <div class="menu__content">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <?= '<a href="./index.php' . $token . '" class="">マイページ</a>' ?>
-          </li>
-          <li class="menu__item">
-            <?= '<a href="../home.php' . $token . '" class="">ホーム</a>' ?>
-          </li>
-        </ul>
-      </div>
       <div class="mypage__content form__content">
         <div class="notation">
           <p>登録情報</p>

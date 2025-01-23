@@ -1,28 +1,37 @@
 @media screen {
   .mypage__wrapper {
     .mypage__container {
+      &.form__container {
+        margin-top: 0;
+      }
       .mypage__content {
-        .mypage__content {}
+        .menu__list {
+          display: flex;
+          gap: calc(20 / 750 * 100vw);
+          padding-bottom: calc(40 / 750 * 100vw);
+        }
       }
     }
   }
 
-  .mypage__outer {
-    display: flex;
-    column-gap: calc(10 / 750 * 100vw);
-  }
-
   .btn {
-    margin: calc(40 / 750 * 100vw) auto 0;
+    margin: calc(40 / 750 * 100vw) auto;
   }
 }
 
 @media screen and (max-width: 960px) {
-  .mypage__outer {
-    column-gap: 30px;
+  .mypage__wrapper {
+    .mypage__container {
+      .mypage__content {
+        .menu__list {
+          gap: 20px;
+          padding-bottom: 20px;
+        }
+      }
+    }
   }
 
   .btn {
-    margin: 20px auto 0;
+    margin: 20px auto;
   }
 }
